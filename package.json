@@ -1,0 +1,12 @@
+{
+  "name": "my-smart-assistant",
+  "private": true,
+  "version": "1.0.0",
+  "description": "منصة تعليمية ذكية قائمة على الذكاء الاصطناعي للطلاب في المملكة العربية السعودية.",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --loader:.tsx=tsx --jsx=automatic --minify && cp index.html dist/index.html"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.4"
+  }
+}
