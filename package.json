@@ -3,11 +3,26 @@
   "private": true,
   "version": "1.0.0",
   "description": "منصة تعليمية ذكية قائمة على الذكاء الاصطناعي للطلاب في المملكة العربية السعودية.",
+  
+  "homepage": "https://noraalsub1-cpu.github.io/v.6/",
+
   "scripts": {
-    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --loader:.tsx=tsx --jsx=automatic --minify && cp index.html dist/index.html"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "vite": "^5.2.0",
+    "typescript": "^5.2.2",
+    "gh-pages": "^6.1.1",
     "esbuild": "^0.21.4"
   }
 }
-"homepage": "https://noraalsub1-cpu.github.io/v.6/"
